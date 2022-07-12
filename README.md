@@ -1,2 +1,6 @@
 # MoonslimeAcademy
-Responsive website made as a special request.
+Responsive website made as a special request for someone very close to me.
+
+
+
+
