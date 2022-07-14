@@ -1,3 +1,9 @@
+/* makes it so no tap highligting occurs on mobile */
+
+* {
+	-webkit-tap-highlight-color: transparent;	
+}
+
 /*Media query for screens bigger than 768 pixels*/
 
 @media(min-width: 768px) {
@@ -61,7 +67,8 @@ header h1 {
 	text-align: center;
 	color: white;
 	font-family: 'Raleway', sans-serif;
-	font-size: 45px;
+	padding-top: 20px;
+	font-size: 5vh;
 }
 
 
@@ -124,11 +131,17 @@ nav ul li a {
 
 
 /*Effect that highlights list items (menu options in nav bar)*/
-
-nav ul li:hover {
+nav ul li:active {
 	background-color: #939AA4;
+	text-decoration: none;
 }
 
+@media (hover: hover) {
+	nav ul li:hover {
+		background-color: #939AA4;
+		text-decoration: none;
+	}
+}
 
 /*Drawing page header*/
 
@@ -232,14 +245,17 @@ nav ul li:hover {
 	text-decoration: none;
 	font-size: 150%;
 }
-
-.socialMediaLinks:hover {
-	text-shadow: 1px 1px black;
-	font-size: 160%;
+@media (hover: hover) {
+	.socialMediaLinks:hover {
+		text-shadow: 1px 1px black;
+		font-size: 160%;
+		text-decoration: none;
+	}
 }
 
 .socialMediaLinks:active {
 	color: pink;
+	text-decoration: none;
 }
 
 /***********CSS SEPERATE FOR CONTACT PAGE BELOW***********/
@@ -277,13 +293,18 @@ nav ul li:hover {
 	text-decoration: none;
 }
 
-
-/*Hover effect for photo link*/
-
-.slime-title:hover, .playgame-button:hover {
+.slime-title:active {
 	background-color: #939AA4;
+	text-decoration: none;
 }
 
+/*Hover effect for photo link*/
+@media (hover: hover) {
+	.slime-title:hover {
+		background-color: #939AA4;
+		text-decoration: none;
+	}
+  }
 
 /*styling for the slime photos*/
 
